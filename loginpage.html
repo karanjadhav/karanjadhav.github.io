@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-in</title>
+    <script src="reg.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -78,7 +79,7 @@
 
       .ipbox:focus{
           border-radius: 5px;
-          box-shadow: 0 5px 15px rgb(247, 108, 247);
+          box-shadow: 0px 5px 15px rgb(247, 108, 247);
           border: 3px solid rgba(247, 108, 247);
       }
 
@@ -186,7 +187,7 @@
                     <form action="">
                     <input class="usernameinput ipbox"
                     type="text"
-                    id="username"
+                    id="uname"
                     placeholder="Email Address or Username"
                     required/></form>
                 </div>
@@ -195,7 +196,7 @@
                     <form action="">
                     <input class="passwordinput ipbox"
                     type="password"
-                    id="password"
+                    id="pass"
                     placeholder="Password"
                     required/></form>
                 </div>
@@ -216,7 +217,7 @@
                 </div>
 
                 <div>
-                    <button class="loginbtn">Login</button>
+                    <button class="loginbtn" onclick="loginHere();">Login</button>
                 </div>
 
                 <div class="text" style="opacity: 0.8; margin-bottom: 2vh;">
@@ -224,7 +225,7 @@
                 </div>
 
                 <div class="text">
-                    Don't have an account?<a href="" style="color: black;"> Register here</a>
+                    Don't have an account?<a href="Registration.html" style="color: black;"> Register here</a>
                 </div>
 
             </div>
