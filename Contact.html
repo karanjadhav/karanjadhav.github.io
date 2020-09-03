@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courier Tracking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        html, body{
+            margin: 0;
+            background: url("https://free4kwallpapers.com/uploads/originals/2020/01/08/d-abstract-k--wallpaper.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .cckbtn {
+          justify-content: center;
+          align-items: center;
+          border: none;
+          outline: none;
+          border-radius: 15px;
+          height: 8vh;
+          width: 90%;
+          margin-top:2vh;
+          margin-bottom: 2vh;
+          margin-left: 2vw;
+          height: 6vh;
+          width: auto;
+          background-color: darkblue;
+          color: white;
+          font-size: 1em;
+          font-weight: 900;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      .cckbtn:hover{
+          background-color: rgb(51, 197, 255);
+          color: black;
+      }
+      body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: darkgreen;
+}
+.inpot{
+          border-radius: 5px;
+          border: 1px purple;
+          outline: none;
+      }
+
+.inpot:focus{
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgb(247, 108, 247);
+    border: 3px solid rgba(247, 108, 247);
+    }
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+}
+    </style>
+</head>
+<body>
+    <div class="mainbody container-fluid">
+        <div class="row justify-content-center align-items-center" 
+        style="height: 18vh; background-color: gold;">            
+            <div class="col-12 col-md-8 d-flex justify-content-center align-items-center" 
+            style="font-size: 5vh; font-weight: 700;">
+                <i class="fas fa-thumbtack" style="margin-right: 5%;"></i>Track Your Courier
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                <button onclick="window.location='loginpage.html'" 
+                class="cckbtn">Home</button>
+                <button onclick="window.location='loginpage.html'" 
+                class="cckbtn">Track</button>
+                <button onclick="window.location='loginpage.html'" 
+                class="cckbtn">Profile</button>
+                <button onclick="window.location='Contact.html'" 
+                class="cckbtn">Contact us</button>
+            </div>
+            
+        </div>
+
+        <div class="container" style="background-image: linear-gradient(to bottom right, rgb(23, 189, 255), rgb(201, 31, 201));">
+            <div style="text-align:center">
+              <h2>Contact Us</h2>
+              <p>Leave us a message:</p>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="https://raw.githubusercontent.com/karanjadhav/CDAC_AWP/master/contact.jpg" style="width:100%">
+              </div>
+              <div class="column">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input class="inpot" type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input class="inpot" type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">India</option>
+                    <option value="canada">Binod</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea class="inpot" id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+    </div> 
+</body>
+</html>
