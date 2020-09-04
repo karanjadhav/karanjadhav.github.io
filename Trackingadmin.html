@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courier Tracking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        html, body{
+            margin: 0;
+            background-image: url("https://free4kwallpapers.com/uploads/originals/2020/01/08/d-abstract-k--wallpaper.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-height: 100vh;
+        }
+        
+        .cckbtn {
+          justify-content: center;
+          align-items: center;
+          border: none;
+          outline: none;
+          border-radius: 15px;
+          height: 7vh;
+          width: 90%;
+          margin-top:2vh;
+          margin-bottom: 2vh;
+          margin-left: 2vw;
+          width: auto;
+          background-color: darkblue;
+          color: white;
+          font-size: 1em;
+          font-weight: 900;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      .cckbtn:hover{
+          background-color: rgb(51, 197, 255);
+          color: black;
+      }        
+
+      .showbtn {
+          justify-content: center;
+          align-items: center;
+          border: none;
+          outline: none;
+          margin-top:2vh;
+          margin-bottom: 2vh;
+          margin-left: 2vw;
+          height: auto;
+          width: auto;
+          background-color: darkgreen;
+          color: white;
+          font-size: 1em;
+          font-weight: 900;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      .showbtn:hover{
+          background-color: lightgreen;
+          color: black;
+      }
+
+      .ckbtn{
+        background-color: blue;
+        color: white;
+        font-size: 1em;
+        font-weight: 900;
+        font-family: Georgia, 'Times New Roman', Times, serif;          
+      }
+
+      .updbtn{
+        background-color: darkgreen;
+        color: white;
+        font-size: 1em;
+        font-weight: 900;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+    </style>
+</head>
+<body>
+    <div class="mainbody container-fluid">
+        <div class="row justify-content-center align-items-center" 
+        style="height: 18vh; background-color: gold;">            
+            <div class="col-12 col-md-8 d-flex justify-content-center align-items-center" 
+            style="font-size: 8vmin; font-weight: 700;">
+                <i class="fas fa-thumbtack" style="margin-right: 5%;"></i>Track Your Courier
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                <button onclick="window.location='Homepage.html'" 
+                class="cckbtn">Home</button>
+                <button onclick="window.location='loginpage.html'" 
+                class="cckbtn">Track</button>
+                <button onclick="window.location='Profile.html'" 
+                class="cckbtn">Profile</button>
+                <button onclick="window.location='Contact.html'" 
+                class="cckbtn">Contact us</button>
+            </div>
+            
+        </div>
+
+        <div class="row justify-content-center align-items-center" style="margin-top: 5vh;">
+            <div class="col-11 col-md-6 d-flex" style="height: auto; background-color: whitesmoke; margin-bottom: 5vh;">
+                <div class="container justify-content-center" style="padding: 0vh 5vw 5vh 5vw;">
+                    <div class="row justify-content-center align-items-center">
+                        <button class="showbtn">Show Customers List</button>
+                    </div>
+                    <div class="bg-dark justify-content-center align-items-center" style="height: 800px;">
+                        <div class="col d-flex justify-content-center align-items-center" style="color: white; margin-bottom: 3vh;">
+                            Show Tables Here
+                        </div>
+                        <div class="row d-flex bsg-primary justify-content-center align-items-center" 
+                        style="color: white; margin-top: 3vh; margin-bottom: 3vh;">
+                            <div class="col-8" style="padding-left: 5vw;">
+                                Customer Name Here
+                            </div>
+                            <div class="col-4 justify-content-center">
+                                <button class="ckbtn">Check</button>
+                            </div>                            
+                        </div>
+                        <div class="row d-flex bsg-primary justify-content-center align-items-center" 
+                        style="color: white; margin-top: 3vh; margin-bottom: 3vh;">
+                        <div class="col-6" style="padding-left: 5vw;">
+                            Courier ID :
+                        </div>              
+                        <div class="col-6">
+                            <button class="updbtn">Update</button>
+                        </div>             
+                        </div>
+                        
+                    </div>
+                </div>                
+            </div>
+        </div>        
+        </div>
+    </div>
+</body>
+</html>
